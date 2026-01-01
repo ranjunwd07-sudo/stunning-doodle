@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajshree Flour | Premium Quality Chakki Atta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-primary: #003366; 
+            --color-accent: #D4AF37; 
+            --color-earth: #8B4513;
+        }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgba(139, 69, 19, 0.15);
+        }
+
+        .official-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: white;
+            padding: 2px;
+            border: 2px solid var(--color-accent);
+        }
+
+        .wheat-texture {
+            background-image: radial-gradient(#d4af37 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            background-color: #fffdf5;
+        }
+    </style>
+</head>
+<body class="inter text-gray-800 wheat-texture">
+
+    <!-- Header -->
+    <header class="bg-[#003366] text-white sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/u/0/d/1ze1cJXyrOLZggv6cE9a4YI96cXsxUk-B" class="official-logo" alt="Babbar Logo">
+                <div>
+                    <h1 class="cinzel text-xl md:text-2xl font-bold tracking-tight">Rajshree Flour</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-[#D4AF37]">Purity in Every Grain</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex gap-10 items-center text-xs font-bold uppercase tracking-widest">
+                <a href="#philosophy" class="hover:text-[#D4AF37] transition">Our Philosophy</a>
+                <a href="#process" class="hover:text-[#D4AF37] transition">The Process</a>
+                <a href="#products" class="hover:text-[#D4AF37] transition">Products</a>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" 
+                        class="bg-[#D4AF37] text-blue-950 px-6 py-2 rounded-full hover:bg-white transition">
+                    Bulk Inquiry
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-[85vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-5xl">
+            <div class="inline-block px-4 py-1 border border-[#D4AF37] text-[#D4AF37] cinzel tracking-[0.3em] text-sm mb-6 uppercase animate-pulse">
+                Gold Standard FMCG
+            </div>
+            <h2 class="cinzel text-5xl md:text-8xl font-black mb-8 leading-tight drop-shadow-2xl">
+                The Essence of <br><span class="text-[#D4AF37]">Pure Nutrition</span>
+            </h2>
+            <p class="text-lg md:text-2xl opacity-90 max-w-3xl mx-auto mb-12 font-light italic">
+                "From the finest wheat fields to your family's table, we ensure every rotis is soft, nutritious, and filled with love."
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#products" class="bg-[#D4AF37] text-blue-950 px-10 py-4 rounded-full font-bold cinzel hover:bg-white transition shadow-2xl">View Our Range</a>
+                <a href="#process" class="border-2 border-white px-10 py-4 rounded-full font-bold cinzel hover:bg-white hover:text-blue-900 transition">Our Chakki Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Philosophy -->
+    <section id="philosophy" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative order-2 lg:order-1">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1000" 
+                     class="rounded-3xl shadow-2xl z-10 relative" 
+                     alt="Freshly Baked Roti">
+                <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-[#D4AF37]/10 rounded-full -z-0"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-[20px] border-white/30 w-full h-full rounded-3xl"></div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <h3 class="cinzel text-4xl md:text-5xl font-extrabold text-blue-950 mb-8 leading-snug">
+                    Founded on Quality, <br>Driven by Discipline.
+                </h3>
+                <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                    Rajshree Flour is a cornerstone of the <strong>Babbar Group</strong>. Guided by the motto "We prove by action," we don't just sell flour; we deliver health. Our wheat is hand-picked from the most fertile regions of India, ensuring a high protein content and natural sweetness in every bite.
+                </p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-3xl font-black text-blue-900 cinzel">100%</p>
+                        <p class="text-sm font-bold text-[#D4AF37] uppercase tracking-widest">Whole Wheat</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-black text-blue-900 cinzel">0%</p>
+                        <p class="text-sm font-bold text-[#D4AF37] uppercase tracking-widest">Maida Mixed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 px-4 bg-[#003366] text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto relative">
+            <div class="text-center mb-20">
+                <h3 class="cinzel text-4xl font-bold mb-4 tracking-wider">The Rajshree Standard</h3>
+                <div class="w-24 h-1 bg-[#D4AF37] mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto opacity-70">We combine traditional stone-grinding (Chakki) with modern cleaning technology to preserve the wheat's natural bran and germ.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="p-8 bg-white/5 border border-white/10 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="search" class="text-blue-950"></i>
+                    </div>
+                    <h4 class="cinzel font-bold mb-3">Grain Selection</h4>
+                    <p class="text-xs opacity-60">Rigorous 3-stage quality check of raw wheat harvest.</p>
+                </div>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="wind" class="text-blue-950"></i>
+                    </div>
+                    <h4 class="cinzel font-bold mb-3">Air Cleaning</h4>
+                    <p class="text-xs opacity-60">Removing impurities through high-pressure air filtration.</p>
+                </div>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="refresh-cw" class="text-blue-950"></i>
+                    </div>
+                    <h4 class="cinzel font-bold mb-3">Stone Grinding</h4>
+                    <p class="text-xs opacity-60">Slow grinding to prevent heat-loss of vital nutrients.</p>
+                </div>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="package-check" class="text-blue-950"></i>
+                    </div>
+                    <h4 class="cinzel font-bold mb-3">Hygienic Packing</h4>
+                    <p class="text-xs opacity-60">Automated moisture-proof packaging for freshness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="cinzel text-4xl font-bold text-center mb-16 text-blue-950">Our Premium Range</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl product-card border border-gray-100">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590544313513-f96fb069fc7a?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="MP Sharbati Atta">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] font-black uppercase text-[#D4AF37] tracking-widest">Premium Choice</span>
+                        <h4 class="cinzel text-2xl font-bold mt-2 mb-4">MP Sharbati Atta</h4>
+                        <p class="text-sm text-gray-500 mb-6 leading-relaxed">Made from the famous Sehore wheat grains of Madhya Pradesh, known for making exceptionally soft rotis.</p>
+                        <ul class="space-y-2 mb-8 text-xs font-semibold text-gray-700">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> Naturally Sweet Taste</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> Rich in Fiber</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl product-card border-4 border-[#D4AF37]">
+                    <div class="h-64 bg-gray-200 overflow-hidden relative">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white text-[10px] px-3 py-1 font-bold rounded-full uppercase z-10">Best Seller</div>
+                        <img src="https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Classic Chakki Atta">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] font-black uppercase text-blue-900 tracking-widest">Daily Nutrition</span>
+                        <h4 class="cinzel text-2xl font-bold mt-2 mb-4">Classic Chakki Atta</h4>
+                        <p class="text-sm text-gray-500 mb-6 leading-relaxed">The perfect balance of texture and nutrition for the modern Indian family. 100% whole wheat with zero additives.</p>
+                        <ul class="space-y-2 mb-8 text-xs font-semibold text-gray-700">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> High Water Absorption</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> 100% Whole Wheat</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl product-card border border-gray-100">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Multigrain Shakti">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-[10px] font-black uppercase text-[#D4AF37] tracking-widest">Health Plus</span>
+                        <h4 class="cinzel text-2xl font-bold mt-2 mb-4">Multigrain Shakti</h4>
+                        <p class="text-sm text-gray-500 mb-6 leading-relaxed">A powerful blend of wheat, soy, oats, maize, and chana for a protein-packed meal that keeps you energetic.</p>
+                        <ul class="space-y-2 mb-8 text-xs font-semibold text-gray-700">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> 7-Grain Fortification</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-600"></i> Low Glycemic Index</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Inquiry -->
+    <section id="contact" class="py-24 px-4 bg-[#f8f5ed]">
+        <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl border-t-8 border-blue-900">
+            <div class="text-center mb-12">
+                <h3 class="cinzel text-4xl font-bold text-blue-950">Partner With Us</h3>
+                <p class="text-gray-500 mt-4">For distributorship, retail chains, or bulk industrial orders.</p>
+            </div>
+            <form class="space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Full Name</label>
+                        <input type="text" class="w-full border-b-2 border-gray-100 focus:border-[#D4AF37] p-3 outline-none transition duration-300">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Contact Number</label>
+                        <input type="tel" class="w-full border-b-2 border-gray-100 focus:border-[#D4AF37] p-3 outline-none transition duration-300">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Business Type</label>
+                    <select class="w-full border-b-2 border-gray-100 focus:border-[#D4AF37] p-3 outline-none bg-transparent">
+                        <option>Retail Partnership</option>
+                        <option>Distributorship Inquiry</option>
+                        <option>Industrial Bulk Order</option>
+                        <option>Other Inquiry</option>
+                    </select>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Message</label>
+                    <textarea class="w-full border-b-2 border-gray-100 focus:border-[#D4AF37] p-3 h-32 outline-none resize-none transition duration-300"></textarea>
+                </div>
+                <button type="button" class="w-full bg-blue-900 text-white py-5 rounded-2xl font-bold cinzel text-xl hover:bg-[#D4AF37] transition shadow-xl transform active:scale-95">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-16 px-4 border-t-8 border-[#D4AF37]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12 mb-12">
+                <div class="flex items-center gap-4">
+                    <img src="https://lh3.googleusercontent.com/u/0/d/1ze1cJXyrOLZggv6cE9a4YI96cXsxUk-B" class="w-16 h-16 bg-white p-1 rounded-full border-2 border-[#D4AF37]" alt="Logo">
+                    <div>
+                        <p class="cinzel font-bold text-2xl tracking-tighter">Rajshree Flour</p>
+                        <p class="text-[10px] uppercase opacity-60 tracking-[0.2em]">A Legacy of Babbar Group</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+            <div class="text-center border-t border-white/10 pt-12">
+                <p class="text-xs opacity-50 tracking-widest uppercase">© 2025 Babbar Group FMCG Division. Quality and Discipline Since Inception.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+king-[0.5em]">© 2025 Babbar Group Healthcare.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+ always have a reliable stop.",
+                action: { label: "Find Locations", url: "#contact" },
+                icon: "fuel"
+            },
+            { 
+                id: 'vidhyut',
+                name: "VIDHYUT TRANSMISSION", 
+                category: "Infrastructure", 
+                desc: "Powering regional growth through electrical infrastructure development.",
+                longDesc: "High-voltage transmission line installation and substation management, contributing to the nation's energy security.",
+                action: { label: "Contracting Details", url: "#contact" },
+                icon: "zap"
+            },
+            { 
+                id: 'vedic',
+                name: "VEDIC HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Integrated wellness center combining modern diagnostics with Ayurveda.",
+                longDesc: "Vedic Hospital offers a holistic approach to healing, bridging the gap between ancient wisdom and modern clinical precision.",
+                action: { label: "Book Consultation", url: "#contact" },
+                icon: "heart-pulse"
+            },
+            { 
+                id: 'arogya',
+                name: "AROGYA HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Advanced multi-specialty surgical and diagnostic center.",
+                longDesc: "Specializing in emergency care and modern surgery, Arogya Hospital is equipped with the latest medical technology.",
+                action: { label: "Inquire Services", url: "#contact" },
+                icon: "stethoscope"
+            },
+            { 
+                id: 'swastik',
+                name: "SWASTIK HOSPITAL", 
+                category: "Healthcare", 
+                desc: "Community healthcare facility focused on primary and pediatric care.",
+                longDesc: "Reliable family medicine and maternal health services located in urban centers for easy accessibility.",
+                action: { label: "Learn More", url: "#contact" },
+                icon: "activity"
+            },
+            { 
+                id: 'resonance',
+                name: "RESONANCE COMMERCIAL", 
+                category: "Real Estate", 
+                desc: "Premium A-grade office spaces and commercial complexes.",
+                longDesc: "Designing the skylines of tomorrow, Resonance Commercial develops sustainable and high-tech office environments.",
+                action: { label: "Leasing Inquiries", url: "#contact" },
+                icon: "building-2"
+            },
+            { 
+                id: 'hamper',
+                name: "HAMPER SPECIAL PURPOSE", 
+                category: "Real Estate", 
+                desc: "Logistics and special industrial infrastructure projects.",
+                longDesc: "Warehousing, cold storage, and specialized industrial parks tailored for large-scale operations.",
+                action: { label: "Project Details", url: "#contact" },
+                icon: "warehouse"
+            },
+            { 
+                id: 'sugun',
+                name: "SUGUN RESIDENTIAL", 
+                category: "Real Estate", 
+                desc: "Luxury and affordable housing projects for modern living.",
+                longDesc: "Sugun Residential focus on community, safety, and modern amenities in every housing society we develop.",
+                action: { label: "View Listings", url: "#contact" },
+                icon: "home"
+            }
+        ];
+
+        // UI Logic
+        function renderGrid() {
+            const container = document.getElementById('grid-container');
+            container.innerHTML = entities.map((e, idx) => `
+                <div onclick="showDetail('${e.id}')" class="company-card group cursor-pointer bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm ${e.flagship ? 'flagship-gradient lg:col-span-2' : ''}">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 ${e.flagship ? 'bg-white text-[#002D5B]' : 'bg-[#002D5B] text-[#C5A028]'} rounded-2xl flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+                            <i data-lucide="${e.icon}" class="w-7 h-7"></i>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${e.flagship ? 'bg-[#C5A028] text-[#002D5B]' : 'bg-slate-100 text-slate-500'} rounded-full">${e.category}</span>
+                    </div>
+                    <h3 class="cinzel text-xl md:text-2xl font-bold mb-3 ${e.flagship ? 'text-white' : 'text-[#002D5B]'} group-hover:text-[#C5A028] transition-colors">${e.name}</h3>
+                    <p class="${e.flagship ? 'text-white/80' : 'text-slate-500'} text-sm leading-relaxed mb-6">${e.desc}</p>
+                    <div class="flex items-center gap-2 font-bold text-xs uppercase tracking-widest ${e.flagship ? 'text-[#C5A028]' : 'text-[#002D5B] group-hover:translate-x-2'} transition-transform">
+                        Explore Venture <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function showDetail(id) {
+            const e = entities.find(item => item.id === id);
+            const focus = document.getElementById('focus-area');
+            const details = document.getElementById('details-view');
+
+            details.innerHTML = `
+                <div class="md:w-1/3">
+                    <div class="w-24 h-24 bg-[#002D5B] text-[#C5A028] rounded-3xl flex items-center justify-center shadow-xl mb-6">
+                        <i data-lucide="${e.icon}" class="w-12 h-12"></i>
+                    </div>
+                    <span class="cinzel text-xs font-bold text-[#C5A028] tracking-widest">${e.category}</span>
+                    <h2 class="cinzel text-3xl font-bold text-[#002D5B] mt-2 leading-tight">${e.name}</h2>
+                </div>
+                <div class="md:w-2/3 border-l-0 md:border-l border-slate-200 md:pl-10">
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">${e.longDesc}</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="${e.action.url}" target="${e.action.url.startsWith('http') ? '_blank' : '_self'}" 
+                           class="px-8 py-4 bg-[#002D5B] text-[#C5A028] cinzel font-bold rounded-xl shadow-lg hover:bg-[#C5A028] hover:text-[#002D5B] transition-all">
+                            ${e.action.label}
+                        </a>
+                        <button onclick="document.getElementById('focus-area').classList.add('hidden')" class="px-8 py-4 border-2 border-slate-200 text-slate-500 cinzel font-bold rounded-xl hover:bg-slate-50 transition-all">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            focus.classList.remove('hidden');
+            focus.scrollIntoView({ behavior: 'smooth' });
+            lucide.createIcons();
+        }
+
+        // AI Chat Logic
+        function toggleChat() {
+            document.getElementById('chat-window').classList.toggle('open');
+        }
+
+        function appendMsg(sender, text) {
+            const content = document.getElementById('chat-content');
+            const div = document.createElement('div');
+            div.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'}`;
+            div.innerHTML = `
+                <div class="${sender === 'user' ? 'bg-[#002D5B] text-white rounded-tr-none' : 'bg-white border border-slate-200 rounded-tl-none'} p-3 rounded-2xl text-sm shadow-sm max-w-[85%]">
+                    ${text}
+                </div>
+            `;
+            content.appendChild(div);
+            content.scrollTop = content.scrollHeight;
+        }
+
+        async function callGemini(query) {
+            const sys = `You are the Babbar Group AI Assistant. 
+            Chairman: Mr. Raj Babbar Raj. 
+            Slogan: "We prove by action." 
+            Core Values: Quality and Discipline.
+            Ventures: ${entities.map(e => e.name).join(', ')}.
+            Alliance Career Institute is flagship (${ALLIANCE_WEBSITE}).
+            Rajeshwari College PDF: ${RAJESHWARI_PDF}.
+            Contact: +91 9065919011, ranjunwd07@gmail.com.
+            Tone: Professional, regal, concise. If they ask for the college info, mention the PDF specifically.`;
+
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            // Exponential backoff logic
+            for (let i = 0, delay = 1000; i < 5; i++, delay *= 2) {
+                try {
+                    const res = await fetch(url, {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: query }] }],
+                            systemInstruction: { parts: [{ text: sys }] }
+                        })
+                    });
+                    if (!res.ok) throw new Error('API Error');
+                    const data = await res.json();
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text;
+                } catch (e) {
+                    if (i === 4) return "I'm experiencing a high volume of inquiries. Please contact our support team at +91 9065919011.";
+                    await new Promise(r => setTimeout(r, delay));
+                }
+            }
+        }
+
+        async function handleSend() {
+            const input = document.getElementById('user-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendMsg('user', text);
+            input.value = '';
+            
+            const typing = document.getElementById('typing');
+            typing.classList.remove('hidden');
+
+            const reply = await callGemini(text);
+            typing.classList.add('hidden');
+            appendMsg('ai', reply);
+        }
+
+        // Init
+        window.onload = () => {
+            renderGrid();
+            document.getElementById('user-input').addEventListener('keypress', e => {
+                if(e.key === 'Enter') handleSend();
+            });
+        };
+    </script>
+</body>
+</html>
+
